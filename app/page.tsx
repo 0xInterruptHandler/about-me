@@ -30,7 +30,7 @@ export default function Portfolio() {
               <p className="text-[#a89984] text-lg">Security Minded (Cybersecurity Enthusiast / Web Developer)</p>
             </div>
             <Avatar className="w-24 h-24 border-2 border-[#a6adc8]">
-              <AvatarImage src="/pfpmain.jpg" alt="0xInterruptHandler" />
+              <AvatarImage src="/nextjs-portfolio/pfpmain.jpg" alt="0xInterruptHandler" />
               <AvatarFallback>AR</AvatarFallback>
             </Avatar>
           </div>
