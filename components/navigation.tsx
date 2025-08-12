@@ -1,19 +1,15 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sun, Moon, Menu, X, Github } from "lucide-react"
 import Link from "next/link"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDark, setIsDark] = useState(true) // Catppuccin Mocha is dark by default
 
-  const toggleTheme = () => {
-    setIsDark(!isDark)
-    // In a real app, you'd toggle a class on <html> or use a context
-    // For this example, we'll just toggle the icon
-  }
+
+ 
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1e1e2e]/90 backdrop-blur-md border-b border-[#45475a]">
@@ -46,26 +42,12 @@ export default function Navigation() {
               <Github className="h-4 w-4" />
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#313244]"
-            >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
+ 
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#313244]"
-            >
-              {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
+          <div className="md:hidden flex items-center space-x-5">
+     
             <Button
               variant="ghost"
               size="icon"

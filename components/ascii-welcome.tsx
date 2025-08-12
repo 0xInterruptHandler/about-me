@@ -105,7 +105,8 @@ export default function AsciiWelcome() {
 
   return (
     <div className="flex items-center justify-center text-center">
-      <pre className="text-[#cba6f7] text-xs sm:text-sm md:text-base lg:text-lg font-mono leading-tight">
+      <pre className="text-[#cba6f7] text-[6px] sm:text-[3px] md:text-[4px] lg:text-[5px] font-mono leading-none">
+
         {asciiArt}
       </pre>
     </div>

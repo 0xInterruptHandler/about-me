@@ -5,7 +5,7 @@ import Image from "next/image"
 import Navigation from "@/components/navigation"
 import AsciiWelcome from "@/components/ascii-welcome" // Import the new component
 import Link from "next/link"
-
+import GruvboxCube from "@/components/gruvbox-cube"
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#1e1e2e] text-[#cdd6f4]">
@@ -17,34 +17,33 @@ export default function Portfolio() {
           {/* ASCII Welcome Art */}
           <div className="mb-8">
             <AsciiWelcome />
+            {/* <GruvboxCube/> */}
           </div>
           
           {/* Greeting */}
-          <div className="bg-[#313244] rounded-lg px-6 py-3 mb-8 border border-[#45475a]">
+          <div className="bg-[#313244] rounded-lg px-10 py-3 mb-8 border border-[#45475a]">
             <p className="text-[#a6adc8]/80">Cybersecurity enthusiast | CTF Player | Web developer</p>
           </div>
           
           {/* Name and Title */}
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+
+          <div className="flex flex-col md:flex-col items-left gap-2 mb-12">
+                    <h1 className="text-left text-4xl md:text-5xl font-bold mb-0">0xInterruptHandler</h1>
+
             <div className="text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">0xInterruptHandler</h1>
-              <p className="text-[#a89984] text-lg">Security Minded (Cybersecurity Enthusiast / Web Developer)</p>
+              <p className="text-[#63b4da] text-lg">Security Minded (Cybersecurity Enthusiast / Web Developer)</p>
             </div>
-            <Avatar className="w-24 h-24 border-2 border-[#a6adc8]">
+              <Avatar className=" w-24 h-24 border-2 border-[#a6adc8]">
               <AvatarImage src="/nextjs-portfolio/pfpmain.jpg" alt="0xInterruptHandler" />
               <AvatarFallback>AR</AvatarFallback>
-            </Avatar>
-          </div>
-          
-          {/* Work Section */}
-          <section className="mb-12 max-w-2xl">
-            <h2 className="text-2xl font-bold mb-6 text-left w-full">Work</h2>
+              </Avatar>
+            <h2 className="text-2xl font-bold mb-0 text-left w-full">Work</h2>
                 <p className="text-[#cdd6f4]/90 leading-relaxed text-left">
               I post videos on my  YouTube channel called{' '}
               <span className="text-[#a6e3a1]">"0xInterruptHandler"</span>.
             </p>
-            
-            <div className="mt-8">
+
+                      <div className="mt-8">
               <Link
               href="https://github.com/0xInterruptHandler"
               target="_blank"
@@ -57,9 +56,7 @@ export default function Portfolio() {
               </Button>
               </Link>
             </div>
-          </section>
-          
-          {/* Bio Section */}
+
           <section className="max-w-2xl w-full">
             <h2 className="text-2xl font-bold mb-6 text-left">Bio</h2>
             <div className="space-y-4 text-left">
@@ -70,7 +67,12 @@ export default function Portfolio() {
           
             </div>
           </section>
-          
+            
+
+          </div>
+
+ 
+     
           {/* Social Links */}
           <div className="flex gap-4 mt-12">
             <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#b8bb26] hover:bg-[#3c3836]">

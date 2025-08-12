@@ -20,15 +20,15 @@ function RotatingCube() {
     <mesh ref={meshRef} scale={1.5}>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial 
-        color="#b8bb26" 
+        color="#1e1e2e" 
         roughness={0.3}
         metalness={0.1}
-        emissive="#98971a"
+        emissive="#1e1e2e"
         emissiveIntensity={0.1}
       />
       <lineSegments>
         <edgesGeometry args={[new THREE.BoxGeometry(1, 1, 1)]} />
-        <lineBasicMaterial color="#fabd2f" linewidth={2} />
+        <lineBasicMaterial color="#cba6f7" linewidth={2} />
       </lineSegments>
     </mesh>
   )
@@ -42,8 +42,8 @@ export default function GruvboxCube() {
         style={{ background: 'transparent' }}
       >
         <ambientLight intensity={0.5} color="#ebdbb2" />
-        <pointLight position={[10, 10, 10]} intensity={1} color="#fabd2f" />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#83a598" />
+        <pointLight position={[10, 10, 10]} intensity={1} color="#1e1e2e" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#1e1e2e" />
         <RotatingCube />
         <OrbitControls 
           enableZoom={false} 
