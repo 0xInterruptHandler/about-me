@@ -4,6 +4,7 @@ import { Github, Twitter, Linkedin, Mail, ChevronRight } from 'lucide-react'
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import AsciiWelcome from "@/components/ascii-welcome" // Import the new component
+import Link from "next/link"
 
 export default function Portfolio() {
   return (
@@ -44,10 +45,17 @@ export default function Portfolio() {
             </p>
             
             <div className="mt-8">
+              <Link
+              href="https://github.com/0xInterruptHandler"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
               <Button className="bg-[#cba6f7] hover:bg-[#b4befe] text-[#1e1e2e] font-medium">
 
                 My portfolio <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
+              </Link>
             </div>
           </section>
           
