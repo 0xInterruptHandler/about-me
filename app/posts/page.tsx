@@ -27,10 +27,10 @@ export default function Posts() {
  
           
           {/* Popular Posts Heading */}
-          <h1 className="text-2xl font-bold mb-8 text-center">Some of my youtube Posts</h1>
+          <h1 className="text-2xl font-bold mt-20 mb-8 text-center">Some of my youtube Posts</h1>
           
           {/* Posts Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full"> {/* Changed to 4 columns on md and up, reduced gap */}
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4   w-full"> {/* Changed to 4 columns on md and up, reduced gap */}
             {posts.map((post, index) => (
               <Link 
                 key={index} 

@@ -75,16 +75,22 @@ export default function Portfolio() {
      
           {/* Social Links */}
           <div className="flex gap-4 mt-12">
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+                          <Link
+              href="https://github.com/0xInterruptHandler"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            > 
+            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+            </Button></Link>
+            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Twitter className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Mail className="h-5 w-5" />
             </Button>
           </div>

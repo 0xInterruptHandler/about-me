@@ -1,15 +1,12 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Sun, Moon, Menu, X, Github } from "lucide-react"
+import { Menu, X, Github } from "lucide-react"
 import Link from "next/link"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-
- 
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1e1e2e]/90 backdrop-blur-md border-b border-[#45475a]">
@@ -22,16 +19,9 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/works" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">
-              Works
-            </Link>
-            <Link href="/posts" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">
-              Posts
-            </Link>
-            <Link href="/uses" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">
-              Uses
-            </Link>
-            {/* TODO: Agrega tu URL de GitHub en el href abajo */}
+            <Link href="/works" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Works</Link>
+            <Link href="/posts" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Posts</Link>
+            <Link href="/uses" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Uses</Link>
             <Link
               href="https://github.com/0xInterruptHandler"
               target="_blank"
@@ -39,15 +29,15 @@ export default function Navigation() {
               aria-label="GitHub"
             >
               <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#313244]">
-              <Github className="h-4 w-4" />
+                <Github className="h-4 w-4" />
               </Button>
             </Link>
- 
+            <Link href="/playground" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Playground</Link>
+
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-5">
-     
             <Button
               variant="ghost"
               size="icon"
@@ -59,9 +49,15 @@ export default function Navigation() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-[#45475a]">
+        {/* Mobile Menu con animación */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-200 ease-out ${
+            isMenuOpen
+              ? "max-h-40 opacity-100 scale-100"
+              : "max-h-0 opacity-0 scale-95"
+          } origin-top`}
+        >
+          <div className="py-4 border-t border-[#45475a]">
             <div className="flex flex-col space-y-4 px-4">
               <Link
                 href="/works"
@@ -84,9 +80,16 @@ export default function Navigation() {
               >
                 Uses
               </Link>
+              <Link
+                href="/playground"
+                className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Playground
+              </Link>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   )
