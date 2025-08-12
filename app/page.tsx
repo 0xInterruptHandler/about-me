@@ -40,7 +40,7 @@ export default function Portfolio() {
             <h2 className="text-2xl font-bold mb-0 text-left w-full">Work</h2>
                 <p className="text-[#cdd6f4]/90 leading-relaxed text-left">
               I post videos on my  YouTube channel called{' '}
-              <span className="text-[#a6e3a1]">"0xInterruptHandler"</span>.
+              <span className="text-[#d35c53]">"0xInterruptHandler"</span>.
             </p>
 
                       <div className="mt-8">
@@ -61,7 +61,7 @@ export default function Portfolio() {
             <h2 className="text-2xl font-bold mb-6 text-left">Bio</h2>
             <div className="space-y-4 text-left">
               <div className="flex gap-4">
-                <span className="font-bold text-[#f9e2af] min-w-[60px]">year</span>
+                <span className="font-bold cba6f7-[#63b4da] min-w-[60px]">year</span>
                 <span className="text-[#cdd6f4]/90">text.</span>
               </div>
           
@@ -75,16 +75,16 @@ export default function Portfolio() {
      
           {/* Social Links */}
           <div className="flex gap-4 mt-12">
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#b8bb26] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#b8bb26] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Twitter className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#b8bb26] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#b8bb26] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#a89984] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Mail className="h-5 w-5" />
             </Button>
           </div>
