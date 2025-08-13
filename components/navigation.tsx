@@ -14,12 +14,13 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-lg font-bold text-[#cdd6f4]">&lt;/&gt; 0xInterruptHandler</span>
+            <span className="text-lg font-bold text-[#cdd6f4]">0xInterruptHandler</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/works" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Works</Link>
+            {/* <Link href="/playground" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Playground</Link> */}
+            {/* <Link href="/works" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Works</Link> */}
             <Link href="/posts" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Posts</Link>
             <Link href="/uses" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Uses</Link>
             <Link
@@ -32,7 +33,6 @@ export default function Navigation() {
                 <Github className="h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/playground" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Playground</Link>
 
           </div>
 
@@ -59,13 +59,13 @@ export default function Navigation() {
         >
           <div className="py-4 border-t border-[#45475a]">
             <div className="flex flex-col space-y-4 px-4">
-              <Link
+              {/* <Link
                 href="/works"
                 className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Works
-              </Link>
+              </Link> */}
               <Link
                 href="/posts"
                 className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"
@@ -80,13 +80,13 @@ export default function Navigation() {
               >
                 Uses
               </Link>
-              <Link
+              {/* <Link
                 href="/playground"
                 className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Playground
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

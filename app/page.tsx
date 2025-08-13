@@ -52,12 +52,12 @@ export default function Portfolio() {
             >
               <Button className="bg-[#cba6f7] hover:bg-[#b4befe] text-[#1e1e2e] font-medium">
 
-                My portfolio <ChevronRight className="ml-2 h-4 w-4" />
+                My Github Profile <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
               </Link>
             </div>
 
-          <section className="max-w-2xl w-full">
+          {/* <section className="max-w-2xl w-full">
             <h2 className="text-2xl font-bold mb-6 text-left">Bio</h2>
             <div className="space-y-4 text-left">
               <div className="flex gap-4">
@@ -66,7 +66,7 @@ export default function Portfolio() {
               </div>
           
             </div>
-          </section>
+          </section> */}
             
 
           </div>
@@ -84,7 +84,7 @@ export default function Portfolio() {
             <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Github className="h-5 w-5" />
             </Button></Link>
-            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+            {/* <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Twitter className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
@@ -92,7 +92,7 @@ export default function Portfolio() {
             </Button>
             <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Mail className="h-5 w-5" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </main>

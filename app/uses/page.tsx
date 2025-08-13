@@ -22,7 +22,7 @@ export default function Uses() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8">Uses</h1>
           <p className="text-[#a6adc8] mb-12 text-lg">
-            Here's a list of tools, software, and hardware I use for development and design.
+            Here's a list of tools, software I use for development.
           </p>
           
           <div className="space-y-8">
