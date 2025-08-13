@@ -21,7 +21,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             {/* <Link href="/playground" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Playground</Link> */}
             {/* <Link href="/works" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Works</Link> */}
-            <Link href="/posts" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Posts</Link>
+            {/* <Link href="/posts" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Posts</Link> */}
             <Link href="/uses" className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors">Uses</Link>
             <Link
               href="https://github.com/0xInterruptHandler"
@@ -66,13 +66,13 @@ export default function Navigation() {
               >
                 Works
               </Link> */}
-              <Link
+              {/* <Link
                 href="/posts"
                 className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Posts
-              </Link>
+              </Link> */}
               <Link
                 href="/uses"
                 className="text-[#a6adc8] hover:text-[#cba6f7] transition-colors px-2 py-1"

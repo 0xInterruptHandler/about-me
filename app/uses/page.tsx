@@ -9,7 +9,17 @@ export default function Uses() {
         { name: "Visual Studio Code", description: "My primary code editor with various extensions" },
         { name: "Nvim", description: "My secondary code editor" },
         { name: "Kitty", description: "My CLI" },
-        { name: "Git", description: "Version control system" } 
+        { name: "Git", description: "Version control system" },
+
+      ]
+    },
+    {
+      title: "Others",
+      items: [
+        { name: "Linux", description: "Mainly debian or arch linux distros" },
+        { name: "Emacs", description: "" },
+ 
+
       ]
     } 
   ]

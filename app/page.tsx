@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Github, Twitter, Linkedin, Mail, ChevronRight } from 'lucide-react'
+import { Github, Twitter, Linkedin, Mail, ChevronRight, Youtube, Discord} from 'lucide-react'
 import Image from "next/image"
 import Navigation from "@/components/navigation"
 import AsciiWelcome from "@/components/ascii-welcome" // Import the new component
 import Link from "next/link"
-import GruvboxCube from "@/components/gruvbox-cube"
+ 
+import { FaDiscord } from 'react-icons/fa';
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-[#1e1e2e] text-[#cdd6f4]">
@@ -55,6 +56,8 @@ export default function Portfolio() {
                 My Github Profile <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
               </Link>
+ 
+              
             </div>
 
           {/* <section className="max-w-2xl w-full">
@@ -81,9 +84,30 @@ export default function Portfolio() {
               rel="noopener noreferrer"
               aria-label="GitHub"
             > 
-            <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+            <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Github className="h-5 w-5" />
             </Button></Link>
+                                      <Link
+              href="https://github.com/0xInterruptHandler"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Youtube"
+            > 
+            <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+              <Youtube className="h-5 w-5" />
+            </Button></Link>
+
+                <Link
+      href="https://discordapp.com/users/1271245976094642247"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Discord"
+    >
+            <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#3c3836]">
+      <FaDiscord  />
+
+        </Button>
+    </Link>
             {/* <Button variant="ghost" size="icon" className="text-[#45475a] hover:text-[#cba6f7] hover:bg-[#3c3836]">
               <Twitter className="h-5 w-5" />
             </Button>
