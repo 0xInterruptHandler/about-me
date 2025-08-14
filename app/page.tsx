@@ -9,7 +9,7 @@ import { FaDiscord } from 'react-icons/fa'
 import { useState } from "react"
 
 export default function Portfolio() {
-  const [lang, setLang] = useState<"es" | "en">("es")
+  const [lang, setLang] = useState<"es" | "en">("en")
 
   const content = {
     es: (
@@ -17,48 +17,12 @@ export default function Portfolio() {
  
 
         <p>
-          Soy 0xInterruptHandler, estudiante de Ingeniería de Sistemas y
-          desarrollador web junior con sólidos fundamentos teóricos en
-          informática y programación. Me apasiona crear soluciones seguras,
-          eficientes y usables, explorando cómo funcionan las tecnologías a un
-          nivel profundo.
+          Soy 0xInterruptHandler, estudiante de Ingeniería de Sistemas.
+          Actualmente me encuentro activo en plataformas de CTF como TryHackme,
+          Asimismo he empezado a practicar en leetCode.
         </p>
 
-        <p>
-          Aunque no me considero aún un backend developer pleno, tengo
-          experiencia práctica desarrollando APIs y microservicios con Node.js,
-          Express y Spring Boot, así como optimizando bases de datos SQL y
-          diseñando arquitecturas escalables.
-        </p>
-
-        <p>
-          Mi interés por la ciberseguridad ofensiva me ha llevado a aprender
-          continuamente sobre vulnerabilidades, buenas prácticas y estrategias
-          de defensa, aplicando este conocimiento al desarrollo seguro de
-          software.
-        </p>
-
-        <p>
-          Más allá de la programación, disfruto leer, investigar y comprender a
-          fondo cómo funcionan los sistemas. Creo firmemente en el aprendizaje
-          constante y en la importancia de compartir conocimiento con la
-          comunidad técnica.
-        </p>
-
-        <p className="font-semibold mt-4">
-          Stack y herramientas con las que trabajo habitualmente:
-        </p>
-        <ul className="list-disc list-inside">
-          <li>Sistemas y entornos: Arch Linux, Debian</li>
-          <li>Editores y flujos: Emacs, Neovim</li>
-          <li>Frontend: React, Next.js</li>
-          <li>Backend: Java, Node.js</li>
-          <li>
-            Otros: herramientas CLI, automatización, optimización de entornos
-            de desarrollo
-          </li>
-        </ul>
-
+ 
         <p className="mt-4">
           <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)
         </p>
@@ -92,43 +56,12 @@ export default function Portfolio() {
       <>
  
         <p>
-          I’m 0xInterruptHandler, a Systems Engineering student and junior web
-          developer with strong theoretical foundations in computer science and
-          programming. I’m passionate about creating secure, efficient, and
-          usable solutions, exploring how technologies work at a deep level.
+          I am 0xInterruptHandler, a Systems Engineering student.
+          I am currently active on CTF platforms such as TryHackme,
+          and I have also started practicing on leetCode.
         </p>
-
-        <p>
-          While I don’t yet consider myself a full-fledged backend developer, I
-          have hands-on experience developing APIs and microservices with
-          Node.js, Express, and Spring Boot, as well as optimizing SQL databases
-          and designing scalable architectures.
-        </p>
-
-        <p>
-          My interest in offensive cybersecurity has led me to continuously
-          learn about vulnerabilities, best practices, and defense strategies,
-          applying this knowledge to secure software development.
-        </p>
-
-        <p>
-          Beyond programming, I enjoy reading, researching, and understanding
-          how systems work in depth. I firmly believe in lifelong learning and
-          the importance of sharing knowledge with the tech community.
-        </p>
-
-        <p className="font-semibold mt-4">
-          Stack and tools I regularly work with:
-        </p>
-        <ul className="list-disc list-inside">
-          <li>Systems and environments: Arch Linux, Debian</li>
-          <li>Editors and workflows: Emacs, Neovim</li>
-          <li>Frontend: React, Next.js</li>
-          <li>Backend: Java, Node.js</li>
-          <li>
-            Others: CLI tools, automation, development environment optimization
-          </li>
-        </ul>
+   
+ 
 
         <p className="mt-4">
           <strong>Languages:</strong> Spanish (native), English (advanced)
