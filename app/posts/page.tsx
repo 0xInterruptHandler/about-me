@@ -6,15 +6,11 @@ import AsciiWelcome from "@/components/ascii-welcome"
 export default function Posts() {
   const posts = [
     {
-      title: "Hackeando la Máquina CTF Pickle Rick de TryHackMe | (Tutorial Español) ",
-      image: "https://i.ytimg.com/vi/Xms7jF5RkPo/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhRIFsoZTAP&rs=AOn4CLBwfWJ0Q0Ubfrk_hypZsCq1ecvnXA",
-      slug: "Hackeando la Máquina CTF Pickle Rick de TryHackMe | (Tutorial Español) "
+      title: "Post",
+      image: "",
+      slug: "text "
     },
-    {
-      title: "Preparando entorno de pruebas Buffer Overflow con windows 7 e immunity debugger",
-      image: "https://i.ytimg.com/vi/dSyMCYzr8qo/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhNIFQoZTAP&rs=AOn4CLCzqNhIcospd_Jgz_NX05x5UBJMZA",
-      slug: "Preparando entorno de pruebas Buffer Overflow con windows 7"
-    } 
+    
   ]
 
   return (
