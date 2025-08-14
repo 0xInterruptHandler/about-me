@@ -22,7 +22,6 @@ export default function Portfolio() {
           Asimismo he empezado a practicar en leetCode.
         </p>
 
- 
         <p className="mt-4">
           <strong>Idiomas:</strong> Español (nativo), Inglés (avanzado)
         </p>
@@ -95,17 +94,17 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-[#1e1e2e] text-[#cdd6f4] overflow-x-hidden">
-      <Navigation />
+      {/* <Navigation /> */}
 
       <main className="container mx-auto px-4 pt-20 pb-16">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          <div className="mb-8">
-            <AsciiWelcome />
+          <div className="mb-10">
+            {/* <AsciiWelcome /> */}
           </div>
 
-          <div className="bg-[#313244] rounded-lg px-10 py-3 mb-8 border border-[#45475a]">
+          {/* <div className="bg-[#313244] rounded-lg px-10 py-3 mb-8 border border-[#45475a]">
             <p className="text-[#a6adc8]/80">Cybersecurity enthusiast | CTF Player | Web developer</p>
-          </div>
+          </div> */}
 
           <div className="flex flex-col md:flex-col items-left gap-2 mb-12">
             <h1 className="text-left text-4xl md:text-5xl font-bold mb-0">0xInterruptHandler</h1>
@@ -115,13 +114,13 @@ export default function Portfolio() {
             </div>
 
             <Avatar className="w-24 h-24 border-2 border-[#a6adc8]">
-              <AvatarImage src="/about-me/pfpmain.jpg" alt="0xInterruptHandler" />
+              <AvatarImage src="https://avatars.githubusercontent.com/u/173845338?v=4" alt="0xInterruptHandler" />
               <AvatarFallback>AR</AvatarFallback>
             </Avatar>
 
             <div className="relative w-full">
               <div className="flex items-center justify-center relative">
-                <h2 className="text-2xl font-bold mb-2 text-center w-full">Work</h2>
+                <h2 className="text-2xl font-bold mb-2 text-center w-full"> </h2>
                 <Button
                   variant="outline"
                   size="sm"
@@ -135,7 +134,7 @@ export default function Portfolio() {
 <div className="text-[#cdd6f4]/90 leading-relaxed break-words break-all whitespace-pre-wrap max-w-prose w-full mx-auto text-left px-4">                {content[lang]}
               </div>
             </div>
-
+{/* 
             <div className="mt-8">
               <Link
                 href="https://github.com/0xInterruptHandler"
@@ -147,10 +146,10 @@ export default function Portfolio() {
                   My Github Profile <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
 
-          <div className="flex gap-4 mt-12">
+          <div className="flex gap-4 mt-3">
             <Link href="https://github.com/0xInterruptHandler" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#3c3836]">
                 <Github className="h-5 w-5" />
