@@ -157,7 +157,7 @@ export default function Portfolio() {
               </Button>
             </Link>
 
-            <Link href="https://github.com/0xInterruptHandler" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+            <Link href="https://www.youtube.com/@0xInterruptHandler" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
               <Button variant="ghost" size="icon" className="text-[#a6adc8] hover:text-[#cba6f7] hover:bg-[#3c3836]">
                 <Youtube className="h-5 w-5" />
               </Button>
@@ -168,6 +168,8 @@ export default function Portfolio() {
                 <FaDiscord />
               </Button>
             </Link>
+
+
           </div>
         </div>
       </main>
