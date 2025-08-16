@@ -17,7 +17,7 @@ export default function Portfolio() {
  
 
         <p>
-          Soy 0xInterruptHandler, estudiante de Ingeniería de Sistemas.
+          estudiante de Ingeniería de Sistemas.
           Actualmente me encuentro activo en plataformas de CTF como TryHackme,
           Asimismo he empezado a practicar en leetCode.
         </p>
@@ -55,8 +55,8 @@ export default function Portfolio() {
       <>
  
         <p>
-          I am 0xInterruptHandler, a Systems Engineering student.
-          I am currently active on CTF platforms such as TryHackme,
+          Systems Engineering student.
+          I'm currently active on CTF platforms such as TryHackme,
           and I have also started practicing on leetCode.
         </p>
    
